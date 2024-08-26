@@ -9,7 +9,7 @@ function CabeceraLogo(){
     return(
     <>
         <div className="container">
-            <header>
+            <header className="logo">
                 <img src={logo} alt="logotipo" />
                 <h1>MueblesFAST</h1>
             </header>

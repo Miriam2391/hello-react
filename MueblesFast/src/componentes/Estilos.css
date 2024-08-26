@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+.logo{
+    display: flex;
+    background-color: aqua;
+     
+}
+.logo img{
+    width: 10% ;
+
+}
+
+
+
+.banner{ 
+    width: 100%;
+
+    background-color: #58565683;
+    background-color: rgb(151, 85, 182);  
+}
+
+.banner img{
+    width: 50%;
+display: flex;
+    
+}
+
+
+
+.container{
+    
+    min-height: 100dvh; 
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+ 
+ }
+
+
+
+
+
+
+
+footer{
+   
+}
+
+
+
+
+
+
