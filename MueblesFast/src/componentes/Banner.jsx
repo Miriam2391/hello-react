@@ -1,18 +1,17 @@
 import { Fragment } from "react";
-import mueble1 from '../imagenes/mueble1.webp'
-import './Estilos.css'
+import foto from '../imagenes/mueble1.webp'
 
 
 
-function Banner(){
+
+function banner(){
 
     return(
     <>
-        <div className="container">
-            <header className="banner">
-                <img src={mueble1} alt="logotipo" />
-
-            </header>
+      
+         <div className="banner">
+                <img src={foto} alt="" />
+           
         </div>
     </>
 
@@ -20,7 +19,7 @@ function Banner(){
 
 }
 
-export default Banner;
+export default banner;
 
 
 

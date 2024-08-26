@@ -1,26 +1,28 @@
 import { Fragment } from "react";
 import logo from '../imagenes/logo.avif'
-import './Estilos.css'
+import facebook from '../imagenes/facebook.png'
 
 
 
-function CabeceraLogo(){
+function cabeceraLogo(){
 
     return(
     <>
-        <div className="container">
-            <header className="logo">
-                <img src={logo} alt="logotipo" />
-                <h1>MueblesFAST</h1>
-            </header>
-        </div>
+
+        <header className="barra">
+
+            <img src={logo} alt={nombre}/>
+            <p><strong>MuebesFAST</strong></p> 
+            <img src={facebook} alt="" />
+        
+        </header>
     </>
 
 );
 
 }
 
-export default CabeceraLogo;
+export default cabeceraLogo;
 
 
 

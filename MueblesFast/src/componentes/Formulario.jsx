@@ -1,11 +1,12 @@
 import { Fragment, useState } from "react";
 import { Button, Form } from 'react-bootstrap';
-import './Estilos.css'
 
 
 
 
-const Formulario = () => {
+
+const formulario = () => 
+{
     const [nombre, setNombre] = useState('');
     const [apellidos, setApellidos] = useState('');
     const [celular, setCelular] = useState('');
@@ -45,8 +46,8 @@ const Formulario = () => {
 
     return(
     <>
-        <div className="container">
-        <Form onSubmit={realizarEnvio}>
+        <div className="formulario">
+            <Form onSubmit={realizarEnvio}>
                 <Form.Group>
                     <Form.Control type="text" value={nombre} onChange={cambioNombre} placeholder="Ingrese nombre"></Form.Control>
                     <Form.Control type="text" value={apellidos} onChange={cambioApellido} placeholder="Ingrese apellidos"></Form.Control>
@@ -55,15 +56,14 @@ const Formulario = () => {
                 </Form.Group>
                 <Button variant="primary" type="submit" >Enviar datos</Button>
             </Form>
-            
         </div>
     </>
 
-);
+    );
 
 }
 
-export default Formulario;
+export default formulario;
 
 
 
