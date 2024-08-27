@@ -1,16 +1,16 @@
 import { Fragment } from 'react';
+import './Estilos.css'
 
 
 
-
-function piePagina(){
+function PiePagina(){
 
     return(
     <>
             <footer>
-
+                <div className='texto'>
                 <h1>MueblesFAST</h1>
-
+                </div>
             </footer>
 
     </>
@@ -19,4 +19,4 @@ function piePagina(){
 
 }
 
-export default piePagina;
+export default PiePagina;

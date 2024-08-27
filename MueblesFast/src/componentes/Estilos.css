@@ -1,4 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(247, 241, 233)
+}
+/*inicio cabecera*/
+.cabecera{
+    
+    width: 100%;
+    height: 100px;
+    padding: 10px 50px;
+    display: flex;
+    border-bottom: 2px solid rgb(212, 140, 7);
+}
+.cabecera_titulo{
+    
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: 600;
+    
+   
+    
+}
+#contenedorlogo{
+    box-shadow: 3px 3px 4px black;
+    width: 65px;
+    height: 60px;
+    overflow: hidden;
+    margin: 10px;
+}
 
+.cabecera_img{
+    transform-origin: center;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;    
+}
+
+.redes {
+    margin-left: auto;
+    padding: 10px;
+}
+
+.facebook{
+    transition: all 0.8s ease;
+}
+.facebook:hover{
+    filter: grayscale(1);
+    transition: all 0.6s ease;
+}
+
+.instagram{
+    transition: all 0.8s ease;
+}
+.instagram:hover{
+    filter: grayscale(1);
+    transition: all 0.6s ease;
+}
+
+.youtube{
+    transition: all 0.8s ease;
+}
+.youtube:hover{
+    filter: grayscale(1);
+    transition: all 0.6s ease;
+}
 
 
 

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { Fragment } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import CabeceraLogo from './componentes/CabeceraLogo'
 import Banner from './componentes/Banner'
@@ -15,18 +15,17 @@ function App() {
        <CabeceraLogo />
        <Banner />
 
-     <div className="container container-fluid">
+       <div className="container container-fluid">
         <br />
         <br />
         <h1>Ingreso de Datos</h1>
         <Formulario />
-
       </div>
 
     <PiePagina />    
 
     </>
-  );
+  )
 }
 
 export default App
