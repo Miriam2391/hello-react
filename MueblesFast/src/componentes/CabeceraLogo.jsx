@@ -8,7 +8,6 @@ import youtube from '../imagenes/icons8-youtube-48.png'
 import './Estilos.css'
 
 
-
 function CabeceraLogo(){
 
     
