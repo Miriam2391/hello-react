@@ -4,7 +4,6 @@ import './Estilos.css';
 
 
 
-
 import img0 from '../imagenes/mueble1.webp';
 import img1 from '../imagenes/mueble2.webp';
 import img2 from '../imagenes/mueble3.webp';
@@ -31,11 +30,12 @@ const Banner = () =>
 
   return (
     <>
-    <div className='contenedor'>
-        <img id="paisaje" src={paisajes[c]} className="imagen"/>
+    <section>
+    <div className="partebaner">
+        <img id="paisaje" src={paisajes[c]} className="baner"/>
         
       </div>
-      
+      </section> 
     </>
     
   );

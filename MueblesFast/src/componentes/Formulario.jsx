@@ -1,6 +1,8 @@
 import { Fragment, useState } from "react";
 import { Button, Form } from 'react-bootstrap';
 
+
+
 const Formulario = () => {
     const [ nombre, setNombre ] = useState('');
     const [ apellidos, setApellidos ] = useState('');
@@ -16,6 +18,7 @@ const Formulario = () => {
         if(!celular) newErrors.celular = 'El celular es obligatorio';
         if(!lugar) newErrors.lugar = 'El Lugar es obligatorio';
         setErrors(newErrors);
+        
         alert(`Datos ingresados: { ${nombre}, ${apellidos}, ${celular}, ${lugar} }`);
     }
 
@@ -27,15 +30,32 @@ const Formulario = () => {
 
     return (
         <>
-        <Form onSubmit={realizarEnvio}>
-            <Form.Group>
-                <Form.Control type="text" value={nombre} onChange={cambioNombre}   placeholder="Ingrese nombre"></Form.Control>
-                <Form.Control type="text" value={apellidos} onChange={cambioApellido} placeholder="Ingrese apellidos"></Form.Control>
-                <Form.Control type="text" value={celular}  onChange={cambioCelular} placeholder="Ingrese celular"></Form.Control>
-                <Form.Control type="text"  value={lugar}  onChange={cambioLugar} placeholder="Ingrese lugar de procedencia"></Form.Control>
-            </Form.Group>
-            <Button variant="primary" type="submit" >Enviar datos</Button>
-        </Form>
+        <div className="formul">
+            <Form onSubmit={realizarEnvio}>
+                    <Form.Group>
+                <div className="primero">
+                    <div className="Name">
+                    <label htmlFor="">First Name</label>  
+                    <Form.Control type="text" value={nombre} onChange={cambioNombre}   placeholder="Ingrese nombre"></Form.Control>      
+                    </div> 
+
+                    <div className="textname">
+                    <label htmlFor="">Last Name</label> 
+                    <Form.Control type="text" value={apellidos} onChange={cambioApellido} placeholder="Ingrese apellidos"></Form.Control>
+                    </div>     
+                </div>
+                    <br />
+                    <label htmlFor="">Email Address</label>   
+                    <Form.Control type="text" value={celular}  onChange={cambioCelular} placeholder="Ingrese celular"></Form.Control>
+                    <br/>
+                    <label htmlFor="">Phone Number</label>   
+                    <Form.Control type="text"  value={lugar}  onChange={cambioLugar} placeholder="Ingrese lugar de procedencia"></Form.Control>
+            
+                    </Form.Group>
+                    <br />
+                    <Button variant="primary" type="submit" >Submit</Button>
+            </Form>
+        </div>
         </>
     );
 }

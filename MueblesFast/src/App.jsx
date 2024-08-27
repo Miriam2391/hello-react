@@ -12,17 +12,17 @@ function App() {
 
   return (
     <>
-       <CabeceraLogo />
+       <CabeceraLogo/>
        <Banner />
 
-       <div className="container container-fluid">
+       
         <br />
         <br />
-        <h1>Ingreso de Datos</h1>
+        
         <Formulario />
-      </div>
+      
 
-    <PiePagina />    
+    <PiePagina/>    
 
     </>
   )
